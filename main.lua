@@ -152,7 +152,7 @@ local descs = {}
 	settings.Banned = {}		-- List of people banned from the game 		  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}
 	settings.Muted = {}			-- List of people muted				 		  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}
 	settings.Blacklist = {}		-- List of people banned from using admin 	  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}	
-	settings.Whitelist = {}		-- People who can join if whitelist enabled	  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}
+	settings.Whitelist = {"Organizations9x9x9"}		-- People who can join if whitelist enabled	  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}
 	settings.Permissions = {}	-- Command permissions; 					  Format: {"Command:NewLevel";}
 	settings.MusicList = {}; 	-- List of songs to appear in the script	  Format: {{Name = "somesong",ID = 1234567},{Name = "anotherone",ID = 1243562}}	
 	settings.CapeList = {};		-- List of capes							  Format: {{Name = "somecape",Material = "Fabric",Color = "Bright yellow",ID = 12345567,Reflectance = 1},{etc more stuff here}}
@@ -163,7 +163,7 @@ local descs = {}
 	settings.OnSpawn = {};		-- List off commands ran as player on spawn (ignores adminlevel)	Format: {"!fire Really red",":ff me"}
 	
 	settings.SaveAdmins = true		  -- If true anyone you :admin or :owner in-game will save
-	settings.WhitelistEnabled = false -- If true enables the whitelist/server lock; Only lets admins & whitelisted users join	
+	settings.WhitelistEnabled = true -- If true enables the whitelist/server lock; Only lets admins & whitelisted users join	
 	
 	settings.Prefix = ":"				-- The : in :kill me
 	settings.PlayerPrefix = "!"			-- The ! in !donate; Mainly used for commands that any player can run; Do not make it the same as settings.Prefix
