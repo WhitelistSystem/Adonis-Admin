@@ -148,7 +148,7 @@ local descs = {}
 	settings.Moderators = {}	-- Mods;									  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}
 	settings.Admins = {}  		-- Admins; 						              Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}
 	settings.Owners = {}       	-- Head Admins;								  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}
-	settings.Creators = {"StrikDeveloper","3449331854"}      -- Place Owner;  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}
+	settings.Creators = {"StrikDeveloper","WhaleBlux"}      -- Place Owner;  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}
 	settings.Banned = {}		-- List of people banned from the game 		  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}
 	settings.Muted = {}			-- List of people muted				 		  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}
 	settings.Blacklist = {}		-- List of people banned from using admin 	  Format: {"Username"; "Username:UserId"; UserId; "Group:GroupId:GroupRank"; "Group:GroupId"; "Item:ItemID";}	
@@ -206,7 +206,7 @@ local descs = {}
 	settings.CreatorPowers = true		-- Gives me creator level admin; This is strictly used for debugging; I can't debug without full access to the script
 	settings.CodeExecution = true		-- Enables the use of code execution in Adonis; Scripting related and a few other commands require this
 	
-	settings.BanMessage = "You are banned from this game. Buy UNBAN gamepass to join again."				-- Message shown to banned users
+	settings.BanMessage = "You are banned from this game for logging! If you believe this was a mistake please contact a moderator."				-- Message shown to banned users
 	settings.LockMessage = "Not Whitelisted"	-- Message shown to people when they are kicked while the game is :slocked
 	settings.SystemTitle = "System Message"		-- Title to display in :sm 
 	
